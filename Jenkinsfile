@@ -1,10 +1,9 @@
- pipeline {
+pipeline {
     agent any
     stages {
-        stage('Build') {
+        stage('verfiy version') {
             steps {
-                dir('scripts') {
-                }
+                sh 'php --version'
             }
         }
     }
